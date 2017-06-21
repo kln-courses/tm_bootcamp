@@ -10,7 +10,7 @@ contact: kln@cas.au.dk
 
 
 
-##Schedule##
+## Schedule ##
 
 **DAY 1: SWC|Programming with Python**
 
