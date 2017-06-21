@@ -10,7 +10,7 @@ contact: kln@cas.au.dk
 
 
 
-##Program##
+##Schedule##
 
 **DAY 1: SWC|Programming with Python**
 
@@ -37,7 +37,7 @@ contact: kln@cas.au.dk
 | 09:00-09:30 | Welcome | ins |
 | 09:30-10:00 | `Reading Unstructured Data` | ins |
 | 10:00-10:30 | `Cleaning & Segmentation` | ins |
-| 10:30-11:00 | `` | ins |
+| 10:30-11:00 | Free Play | ins |
 | 11:00-11:30 | `Language Normalization` | ins |
 | 11:30-12:00 | `Term Frequencies` | ins |
 | 12:00-13:00 | Lunch |  |
@@ -54,7 +54,7 @@ contact: kln@cas.au.dk
 | 09:00-09:30 | Welcome | ins |
 | 09:30-10:00 | `Lexical Density` | ins |
 | 10:00-10:30 | `Readability` | ins |
-| 10:30-11:00 | `` | ins |
+| 10:30-11:00 | Free Play | ins |
 | 11:00-11:30 | `Information` | ins |
 | 11:30-12:00 | `Time Series` | ins |
 | 12:00-13:00 | Lunch |  |
