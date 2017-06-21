@@ -1,7 +1,7 @@
 ```yaml
 title: Text Mining Bootcamp
 place: Roskilde University, Denamrk
-time: August 14-18/2017,  9 AM to 4 PM.
+time: August 14-18/2017,  9 AM to 3/4 PM.
 instructors: Peter Leonard (Yale University Library) & Kristoffer L. Nielbo  (DigHumLab)
 contact: kln@cas.au.dk
 ```
@@ -10,7 +10,7 @@ contact: kln@cas.au.dk
 
 
 
-##Program
+##Program##
 
 **DAY 1: SWC|Programming with Python**
 
@@ -45,8 +45,6 @@ contact: kln@cas.au.dk
 | 13:30-14:00 | `Vector Space Representations` | ins |
 | 14:00-14:30 | ``| ins |
 | 14:30-15:00 | `` | ins |
-| 15:00-15:30 | `` | ins |
-| 15:30-16:00 | Finish | ins |
 
 
 **DAY 3: Density, Information and Entities**  
@@ -58,16 +56,31 @@ contact: kln@cas.au.dk
 | 10:00-10:30 | `Readability` | ins |
 | 10:30-11:00 | `` | ins |
 | 11:00-11:30 | `Information` | ins |
-| 11:30-12:00 | `` | ins |
+| 11:30-12:00 | `Time Series` | ins |
 | 12:00-13:00 | Lunch |  |
 | 13:00-13:30 | `Sentiment vectors` | ins |
-| 13:30-14:00 | `` | ins |
+| 13:30-14:00 | `Entity Extraction` | ins |
 | 14:00-14:30 | ``| ins |
-| 14:30-15:00 | `Entity Extraction` | ins |
-| 15:00-15:30 | `` | ins |
-| 15:30-16:00 | Finish | ins |
+| 14:30-15:00 | `` | ins |
 
-**DAY 4: Latent Variables and (Multiple) Relations**
+**DAY 4: Latent Variables and (Multiple) Relations**  
+
+| Time        | Content           | Instructor  |
+| ------------- |:-------------:| -----:|
+| 09:00-09:30 | Welcome | PL |
+| 09:30-10:00 | `` | PL |
+| 10:00-10:30 | `` | PL |
+| 10:30-11:00 | `` | PL |
+| 11:00-11:30 | `` | PL |
+| 11:30-12:00 | `` | PL |
+| 12:00-13:00 | Lunch |  |
+| 13:00-13:30 | `` | PL |
+| 13:30-14:00 | `` | PL |
+| 14:00-14:30 | ``| PL |
+| 14:30-15:00 | `` | PL |
+
+**DAY 5: Associations and Classification**  
+
 | Time        | Content           | Instructor  |
 | ------------- |:-------------:| -----:|
 | 09:00-09:30 | Welcome | ins |
@@ -80,23 +93,4 @@ contact: kln@cas.au.dk
 | 13:00-13:30 | `` | ins |
 | 13:30-14:00 | `` | ins |
 | 14:00-14:30 | ``| ins |
-| 14:30-15:00 | `` | ins |
-| 15:00-15:30 | `` | ins |
-| 15:30-16:00 | Finish | ins |  
-
-**DAY 5: Associations and Classification**
-| Time        | Content           | Instructor  |
-| ------------- |:-------------:| -----:|
-| 09:00-09:30 | Welcome | ins |
-| 09:30-10:00 | `` | ins |
-| 10:00-10:30 | `` | ins |
-| 10:30-11:00 | `` | ins |
-| 11:00-11:30 | `` | ins |
-| 11:30-12:00 | `` | ins |
-| 12:00-13:00 | Lunch |  |
-| 13:00-13:30 | `` | ins |
-| 13:30-14:00 | `` | ins |
-| 14:00-14:30 | ``| ins |
-| 14:30-15:00 | `` | ins |
-| 15:00-15:30 | `` | ins |
-| 15:30-16:00 | Finish | ins |  
+| 14:30-15:00 | Finish | ins |
