@@ -6,9 +6,7 @@ instructors: Peter Leonard (Yale University Library) & Kristoffer L. Nielbo  (DI
 contact: kln@cas.au.dk
 ```
 
-
-
-
+[add description]
 
 ## Schedule ##
 
@@ -43,8 +41,8 @@ contact: kln@cas.au.dk
 | 12:00-13:00 | Lunch |  |
 | 13:00-13:30 | `Dispersion and Distributions` | ins |
 | 13:30-14:00 | `Vector Space Representations` | ins |
-| 14:00-14:30 | ``| ins |
-| 14:30-15:00 | `` | ins |
+| 14:00-14:30 | Project hour | ins |
+| 14:30-15:00 | Project hour | ins |
 
 
 **DAY 3: Density, Information and Entities**  
@@ -60,8 +58,8 @@ contact: kln@cas.au.dk
 | 12:00-13:00 | Lunch |  |
 | 13:00-13:30 | `Sentiment vectors` | ins |
 | 13:30-14:00 | `Entity Extraction` | ins |
-| 14:00-14:30 | ``| ins |
-| 14:30-15:00 | `` | ins |
+| 14:00-14:30 | Project hour| ins |
+| 14:30-15:00 | Project hour| ins |
 
 **DAY 4: Latent Variables and (Multiple) Relations**  
 
@@ -76,10 +74,11 @@ contact: kln@cas.au.dk
 | 12:00-13:00 | Lunch |  |
 | 13:00-13:30 | `` | PL |
 | 13:30-14:00 | `` | PL |
-| 14:00-14:30 | ``| PL |
-| 14:30-15:00 | `` | PL |
+| 14:00-14:30 | Project hour | PL |
+| 14:30-15:00 | Project hour | PL |
 
 **DAY 5: Associations and Classification**  
+topics: word embedding, document similarity and classification  
 
 | Time        | Content           | Instructor  |
 | ------------- |:-------------:| -----:|
