@@ -26,7 +26,7 @@ contact: kln@cas.au.dk
 | 14:00-14:30 | `Defensive Programming`| KLN |
 | 14:30-15:00 | `Debugging` | KLN |
 | 15:00-15:30 | `Command-Line Programs` | KLN |
-| 15:30-16:00 | Finish | ins |
+| 15:30-16:00 | Finish | |
 
 **DAY 2: DIGHUMLAB|From Print to Probability**  
 
@@ -49,17 +49,17 @@ contact: kln@cas.au.dk
 
 | Time        | Content           | Instructor  |
 | ------------- |:-------------:| -----:|
-| 09:00-09:30 | Welcome | ins |
-| 09:30-10:00 | `Lexical Density` | ins |
-| 10:00-10:30 | `Readability` | ins |
-| 10:30-11:00 | Free Play | ins |
-| 11:00-11:30 | `Information` | ins |
-| 11:30-12:00 | `Time Series` | ins |
+| 09:00-09:30 | Welcome | KLN |
+| 09:30-10:00 | `Lexical Density` | KLN |
+| 10:00-10:30 | `Readability` | KLN |
+| 10:30-11:00 | Free Play | KLN |
+| 11:00-11:30 | `Information` | KLN |
+| 11:30-12:00 | `Time Series` | KLN |
 | 12:00-13:00 | Lunch |  |
-| 13:00-13:30 | `Sentiment vectors` | ins |
-| 13:30-14:00 | `Entity Extraction` | ins |
-| 14:00-14:30 | Project hour| ins |
-| 14:30-15:00 | Project hour| ins |
+| 13:00-13:30 | `Sentiment vectors` | KLN |
+| 13:30-14:00 | `Entity Extraction` | KLN |
+| 14:00-14:30 | Project hour|  |
+| 14:30-15:00 | Project hour|  |
 
 **DAY 4: Latent Variables and (Multiple) Relations**  
 
