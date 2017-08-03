@@ -66,14 +66,14 @@ contact: kln@cas.au.dk
 | Time        | Content           | Instructor  |
 | ------------- |:-------------:| -----:|
 | 09:00-09:30 | Welcome | PL |
-| 09:30-10:00 | `` | PL |
-| 10:00-10:30 | `` | PL |
-| 10:30-11:00 | `` | PL |
-| 11:00-11:30 | `` | PL |
-| 11:30-12:00 | `` | PL |
+| 09:30-10:00 | `Network Analysis: Introduction` | PL |
+| 10:00-10:30 | `Network Analysis: Textual/Literary Examples` | PL |
+| 10:30-11:00 | `Free Play: Brainstorming Network Projects` | PL |
+| 11:00-11:30 | `Network Analysis: Gephi` | PL |
+| 11:30-12:00 | `Network Analysis: Palladio` | PL |
 | 12:00-13:00 | Lunch |  |
-| 13:00-13:30 | `` | PL |
-| 13:30-14:00 | `` | PL |
+| 13:00-13:30 | `Topic Modeling` | PL |
+| 13:30-14:00 | `Topics + Networks` | PL |
 | 14:00-14:30 | Project hour | PL |
 | 14:30-15:00 | Project hour | PL |
 
