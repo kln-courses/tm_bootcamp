@@ -1,0 +1,335 @@
+\documentclass[8pt]{beamer}
+\usetheme{Pittsburgh}
+\usecolortheme{dove}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{dirtytalk}% for quotation
+\usepackage{xcolor}% color background of text
+% for box around pictures and text
+\fboxsep=1mm%padding thickness
+\fboxrule=1pt%border thickness
+
+% for code in box and w. text coloring
+\usepackage{color}
+\usepackage{fancyvrb}
+\fvset{frame=single,framesep=1mm,fontfamily=courier,fontsize=\scriptsize,numbers=left,framerule=.3mm,numbersep=1mm,commandchars=\\\{\}}
+
+%% code in box and w. text coloring
+\RequirePackage{color}
+\RequirePackage{fancyvrb}
+\fvset{frame=single,framesep=1mm,fontfamily=courier,fontsize=\scriptsize,numbers=left,framerule=.3mm,numbersep=1mm,commandchars=\\\{\}}
+
+%% border on pictures width
+\fboxsep=1mm%padding thickness
+\fboxrule=1pt%border thickness
+
+% footnote size
+\let\oldfootnotesize\footnotesize
+\renewcommand*{\footnotesize}{\oldfootnotesize\tiny}
+
+% metadata
+\author{K.L. Nielbo}
+%\title{}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber/\inserttotalframenumber
+}
+%\logo{\includegraphics[scale=.1]{/home/kln/Pictures/imc_logo.png}} 
+
+% logo control
+\newcommand{\nologo}{\setbeamertemplate{logo}{}} 
+\logo{%
+  \makebox[.98\paperwidth]{%
+    \includegraphics[scale=.07]{/home/kln/Pictures/aulogo.jpg}%
+    \hfill%
+    \includegraphics[scale=.125]{/home/kln/Pictures/imclogo.png}%
+  }%
+}
+\title{\textbf{text analytics}}
+\subtitle{tm-bootcamp}
+\author{kristoffer l nielbo \\\texttt{kln@cas.au.dk\\github.com/kln-courses/tm\_bootcamp\\tmbootcamp.slack.com}}
+\date{}
+\institute{IMC$\mid$AARHUS UNIVERSITY}
+
+
+\begin{document}
+\frame{\titlepage} 
+%%% instructor and resources %%%
+
+
+\begin{frame}
+%\textbf{DIGITIZATION$\mid$humanities\#1}\\
+%\noindent\rule{1cm}{0.8pt}\\
+	\begin{center}
+%		 \frame{\includegraphics[scale=.5]{../../../Pictures/closeReadingGospelMark.jpg}}
+		 %\fcolorbox{bordercolor}{paddingcolor}{image}
+		\fcolorbox{black}{yellow}{\includegraphics[width=0.5\linewidth]{/home/kln/Pictures/closeReadingGospelMark.jpg}}\\
+	\end{center}
+	\bigskip
+	\noindent\rule{4cm}{0.8pt}\\
+	- domain knowledge in history, language, literature \&c combined with microscopic and (predominantly) qualitative analysis of human cultural manifestations\\ 
+\end{frame}
+
+
+
+%%% text analysis
+\begin{frame}
+	\begin{center}
+	Gospel of Marc (KJV) $\sim$ 16500 words in 16 chp. on 11 p.
+	\bigskip
+		\includegraphics[scale=.5]{/home/kln/Documents/fig/amazonMarc.png}
+	\end{center}
+\end{frame}
+
+%%% ++ data %%%
+\begin{frame}
+`from the dawn of civilization until 2003, humankind generated five exabytes of data. Now we produce \colorbox{red!30}{five exabytes every two days} ... and the pace is accelerating'\\ \flushright Eric Smith (Google)\\
+\bigskip
+\flushleft `increasingly, scientific breakthroughs will be powered by advanced computing capabilities that help researchers manipulate and \colorbox{red!30}{explore massive datasets}'\\ \flushright Jim Gray (Fourth Paradigm)
+\end{frame}
+
+
+%%% warm-up
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.4]{/home/kln/Documents/fig/data_explosion.png}\\
+	\bigskip 
+	\textbf{computational sciences are entering the exa-scale era}\\
+	\textbf{+}\\
+	\textbf{digital technologies are disruptive on a new scale}\\
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.325]{/home/kln/Documents/fig/learningCurves.png}\\
+		\bigskip
+	\textbf{every knowledge-intensive industry have to ``break'' the learning curve}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\textbf{INTERVENTION$\mid$from the console}\\
+	\noindent\rule{1cm}{0.6pt}\\
+	{\small \textbf{GUI $\rightarrow$ CLI}}\\
+	- novice-friendly visual approach to computer interaction w. a fast learning curve \colorbox{red!30}{\tiny \textbf{ERROR}}\\
+	- expert-friendly text-based approach to computer interaction w. ++freedom \colorbox{green!30}{\tiny \textbf{VALID}}\\
+	- \colorbox{yellow!30}{\tiny \textbf{CONFLICT}} break the learning curve through training intensive, non-intuitive, and specialized tools\\   
+\end{frame}
+
+% we need computational literacy --> cooking as coding
+\begin{frame}%{computational literacy}
+	\textbf{Pannang Curry 1-2-3!}\\
+	\medskip
+	\begin{enumerate}
+		\item Open your right refrigerator door and remove ingredients from the following locations: Door shelf 2, Spot 1; Crisper drawer 1, Spot 3; Crisper drawer 1, Spot 5.
+		\item Open your third kitchen drawer and remove the utensils labeled ``1'', ``3'', ``4'', ``9'', and ``12''.
+		\item Use your arms to apply utensil 1 to ingredients 1-3. Place ingredients inside utensil 3.
+	\end{enumerate}
+	\medskip
+  \setbeamercolor{coloredboxstuff}{fg=black,bg=white!80!yellow}
+  	\begin{beamercolorbox}[wd=1\textwidth,sep=1em]{coloredboxstuff}
+    		*Note: This recipe uses ShaKL the Shared Kitchen Layout. To use ShaKL, you'll need to have installed ShaKL shelving, cabinetry, and utensils throughout your kitchen and pantry and have basic understanding of ShaKL managers. To learn more, read \textit{Up and Running with ShaKL} (O'Billy Press, 2015). Want to improve ShaKL? Consider contributing to our team.
+    	\end{beamercolorbox}
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.3]{/home/kln/Documents/fig/ts_example.png}
+	\end{center}
+	\small \textbf{Digital history and media studies}\\
+	 -- prerequisite: humanistic domain experts that use content analysis\\
+	 -- source digitization (newspapers) og super computing change resolution and scale\\
+	 -- technologies create new standards for the domains involved\\
+	 -- share technology, but not data!\\
+\end{frame}
+
+\begin{frame}
+\begin{center}
+	\includegraphics[scale=.3]{/home/kln/Documents/fig/lrd_sent_regress.png}
+\end{center}
+\small \textbf{Computational literary history}\\
+	 -- prerequisite: humanistic domain experts that study writers and literary periods\\
+	 -- high quality digitization of writers, annotation and NLP changes perspective and scale\\
+	 -- technologies that are creating new standards\\
+	 -- sharing of tehcnology and data\\
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{}%data $\neq$ knowledge}
+	\begin{center}
+		\includegraphics[scale=.3]{/home/kln/Pictures/data_knowledge.png}
+	\end{center}
+\end{frame}
+\begin{frame}{}
+	\begin{center}
+		\includegraphics[scale=.3]{/home/kln/Pictures/data_knowledge_data.png}
+	\end{center}
+\end{frame}
+\begin{frame}{}
+	\begin{center}
+		\includegraphics[scale=.3]{/home/kln/Pictures/data_knowledge_info.png}
+	\end{center}
+\end{frame}
+
+
+
+
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.3]{/home/kln/Documents/fig/f1.PNG}
+	\end{center}
+\end{frame}
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.3]{/home/kln/Documents/fig/f2.PNG}
+	\end{center}
+\end{frame}
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.3]{/home/kln/Documents/fig/f3.PNG}
+	\end{center}
+\end{frame}
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.3]{/home/kln/Documents/fig/f4.PNG}
+	\end{center}
+\end{frame}
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.3]{/home/kln/Documents/fig/f5.PNG}
+	\end{center}
+\end{frame}
+
+%%% text analytics field %%%
+\begin{frame}{}
+\texttt{text analytics} $\sim$ text mining $\sim$ automated text analysis\\
+
+\bigskip
+set of data mining\footnote{Fayyad, U., Piatetsky-Shapiro, G., \& Smyth, P. (1996). From data mining to knowledge discovery in databases. AI Magazine, 17(3), 37.} techniques for extracting high quality information from \colorbox{red!30}{large scale text-heavy} (unstructured) data sets \flushright ($\sim$ Miner et al 2012)\\
+
+\medskip
+a tool for discovery and measurement in textual data of \colorbox{red!30}{prevalent attitudes, concepts, or events} \flushright($\sim$ O'Connor, Bamman \& Smith 2011)
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.4]{/home/kln/Documents/fig/ta_field.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.4]{/home/kln/Documents/fig/ta_flowchart.png}
+	\end{center}
+\end{frame}
+
+%%% key concepts
+
+\begin{frame}{}
+\textbf{data} objects that are described over a set of (qualitative or quantitative) features 
+\medskip
+	\begin{center}
+		\includegraphics[scale=.4]{/home/kln/Pictures/datatypes.png}
+	\end{center}
+\medskip
+fundamental difference between structured data and \textbf{unstructured* data}\\
+\smallskip
+- word processing files, pdfs, emails, social media posts, digital images, video, and audio\\
+\smallskip
+- today $> 80\%$ of all data are unstructured\\
+\smallskip
+- increased demand for expertise from culture, media and linguistic domains
+\end{frame}
+
+
+\begin{frame}<presentation:0>
+the goal of \textbf{statistical learning} is to build a machine that can learn from data and automatically make the right decisions\\
+\medskip
+%\textbf{supervised}\\
+supervised learning infer mapping between data \& class-information $\rightarrow$ `ground truth'\\
+%\textbf{unsupervised}\\
+\medskip
+unsupervised learning identify latent classes in the data $\rightarrow$ lack `ground truth'\\
+\end{frame}
+
+
+\begin{frame}
+adequate problem solution requires that we test a range of approaches (algorithms, (hyper-)parameter estimation) - the validation of an approach is an \textbf{experiment}\\
+\medskip
+experiment input: code, data sets, hyperparameter values\\
+\medskip
+experiment output: model definition (weights), metric values (experiment comparison), execution logs\\
+\medskip
+	\begin{center}
+		\colorbox{red!30}{\texttt{a complex and error-prone process}}
+	\end{center}
+\medskip
+$\Rightarrow$ systematically comment your work and process and use version control and source code management
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+   \begin{center}
+   \includegraphics[width=0.5\textwidth]{/home/kln/Pictures/sas.jpg}\\
+   \bigskip
+   \includegraphics[width=0.5\textwidth]{/home/kln/Pictures/Rlogo.png}
+   \end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+    	\begin{center}
+    \includegraphics[width=1\textwidth]{/home/kln/Pictures/pythonLogo.png}\\
+    \bigskip
+    \includegraphics[width=.35\textwidth]{/home/kln/Pictures/matlab.jpg}
+    \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+   \begin{center}
+    \includegraphics[width=1\textwidth]{/home/kln/Pictures/rapidminer.png}\\
+    \bigskip
+    \includegraphics[width=1\textwidth]{/home/kln/Pictures/tableau.png}
+    \end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+    \begin{center}
+    \includegraphics[width=.5\textwidth]{/home/kln/Pictures/antconc.jpg}\\
+    \bigskip
+    \includegraphics[width=.8\textwidth]{/home/kln/Pictures/voyant.png}
+    \end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+	\begin{center}
+		\includegraphics[scale=.2]{/home/kln/Pictures/tapor3.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}
+``There is no true interpretation of anything; interpretation is a vehicle in the service of human comprehension. The value of interpretation is in enabling others to fruitfully think about an idea'' \begin{flushright}
+Andreas Buja
+\end{flushright}
+\end{frame}
+
+\end{document}
