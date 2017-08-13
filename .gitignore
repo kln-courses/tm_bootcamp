@@ -322,4 +322,4 @@ TSWLatexianTemp*
 *-tags.tex
 
 # no tex only pdf
-*.tex
+.tex
