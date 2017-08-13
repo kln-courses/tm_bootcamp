@@ -101,6 +101,7 @@ ENV/
 .mypy_cache/
 
 ## Core latex/pdflatex auxiliary files:
+*.tex
 *.aux
 *.lof
 *.log
@@ -320,6 +321,3 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
-
-# no tex only pdf
-.tex
