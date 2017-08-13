@@ -320,3 +320,6 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+
+# no tex only pdf
+*.tex
