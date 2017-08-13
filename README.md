@@ -1,7 +1,7 @@
 ```yaml
 title: Text Mining Bootcamp
-place: KUA Søndre Campus, Danmark
-time: August 14-18/2017,  9 AM to 3/4 PM.
+place: 12.0.26 på KU Sønder Campus, Danmark
+time: August 14-18/2017,  9 AM to 3 PM.
 instructors: Peter Leonard (Yale University Library) & Kristoffer L. Nielbo (Interacting Minds Centre)
 contact: kln@cas.au.dk
 ```
@@ -19,18 +19,15 @@ contact: kln@cas.au.dk
 | Time        | Content           | Instructor  |
 | ------------- |:-------------:| -----:|
 | 09:00-09:30 | Welcome & Setup | KLN |
-| 09:30-10:00 | `Analyzing Tabular Data` | KLN |
-| 10:00-10:30 | `Repeating Actions with Loops` | KLN |
-| 10:30-11:00 | `Storing Multiple Values in Lists` | KLN |
-| 11:00-11:30 | `Analyzing Data from Multiple Files` | KLN |
-| 11:30-12:00 | `Making Choices` | KLN |
+| 09:30-10:30 | `Text Analytics` | KLN |
+| 10:30-11:00 | `Analyzing Tabular Data` | KLN |
+| 11:00-11:30 | `Repeating Actions with Loops` | KLN |
+| 11:30-12:00 | `Storing Multiple Values in Lists` | KLN |
 | 12:00-13:00 | Lunch | * |
-| 13:00-13:30 | `Creating Functions` | KLN |
-| 13:30-14:00 | `Errors and Exceptions` | KLN |
-| 14:00-14:30 | `Defensive Programming`| KLN |
-| 14:30-15:00 | `Debugging` | KLN |
-| 15:00-15:30 | `Command-Line Programs` | KLN |
-| 15:30-16:00 | Finish | KLN |
+| 13:00-13:30 | `Analyzing Data from Multiple Files` | KLN |
+| 13:30-14:00 | `Making Choices` | KLN |
+| 14:00-14:30 | `Creating Functions` | KLN |
+| 14:30-15:00 | Finish | KLN |
 
 **DAY 2: From Print to Probability**  
 
