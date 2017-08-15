@@ -135,7 +135,7 @@ def gen_stoplist(unigrams, n = 100):
 
 stoplist = gen_stoplist(unigrams, n = 100)
 
-print stoplist
+prin t stoplist
 
 unigram_nostop = [unigram for unigram in unigrams if unigram not in unigrams]
 
@@ -181,22 +181,36 @@ tag_cloud(unigrams_stem, True)
 
 
 
+## Brandes
+texts, filenames = import_dir('brandes_data/')
+
+unigrams_ls = []
+for text in texts:
+    unigrams_ls.append(tokenize(text))
+
+unigrams = unigrams_ls[0]
+stoplist = gen_stoplist(unigrams, n = 100)
+unigrams = [unigram for unigram in unigrams if unigram not in stoplist]
+
+tag_cloud(unigrams,True)
 
 
+print filenames[0]
+print texts[0][:2000]
 
+# bootcamp modul
+import tmbootcamp as tm
+texts, filesnames = tm.read_vanilla('brandes_data/')
 
+unigrams_ls = []
+for text in texts:
+    unigrams_ls.append(tm.tokenize(tm.cleanstr(text)))
+    
+unigrams = unigrams_ls[0]
+stoplist = gen_stoplist(unigrams, n = 100)
 
-
-
-
-
-
-
-
-
-
-
-
+unigrams = [unigram for unigram in unigrams if unigram not in stoplist]
+tag_cloud(unigrams,True)
 
 
 
