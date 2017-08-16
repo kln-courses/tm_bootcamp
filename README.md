@@ -71,7 +71,7 @@ contact: kln@cas.au.dk
 | 10:00-10:30 | [Network Analysis: Textual/Literary Examples](https://docs.google.com/presentation/d/1vOCyVuFylEnKH85ULDk2FH4yrRznVW829_qXfguwN68/edit?usp=sharing) | PL |
 | 10:30-11:00 | `Free Play: Brainstorming Network Projects` | PL |
 | 11:00-11:30 | [Network Analysis: Building a Dataset](https://docs.google.com/presentation/d/1qc76jG8d5V8YuBnq2j8g6UJ_p-VCTIAD6Fe1hNKLmVE/edit?usp=sharing) | PL |
-| 11:30-12:00 | `Network Analysis: Tools - Gephi` | PL |
+| 11:30-12:00 | [Network Analysis: Tools - Gephi](https://docs.google.com/presentation/d/1Dfx7MQqHG3jgqVWYq4wdxvjwRr8WAw0TpDKBVWRC8fc/edit?usp=sharing) | PL |
 | 12:00-13:00 | Lunch | * |
 | 13:00-13:30 | `Topic Modeling` | PL |
 | 13:30-14:00 | `Topics + Networks` | PL |
