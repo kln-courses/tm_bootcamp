@@ -68,7 +68,7 @@ contact: kln@cas.au.dk
 | ------------- |:-------------:| -----:|
 | 09:00-09:30 | Welcome | PL |
 | 09:30-10:00 | [Network Analysis: Introduction](https://docs.google.com/presentation/d/1uaBusqtQgT-JQeaKUda9mAGr7PpMLYJrGpUusFriZHw/edit?usp=sharing) | PL |
-| 10:00-10:30 | `Network Analysis: Textual/Literary Examples` | PL |
+| 10:00-10:30 | [Network Analysis: Textual/Literary Examples](https://docs.google.com/presentation/d/1vOCyVuFylEnKH85ULDk2FH4yrRznVW829_qXfguwN68/edit?usp=sharing) | PL |
 | 10:30-11:00 | `Free Play: Brainstorming Network Projects` | PL |
 | 11:00-11:30 | `Network Analysis: Building a Dataset` | PL |
 | 11:30-12:00 | `Network Analysis: Tools - Gephi & Palladio` | PL |
