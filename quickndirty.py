@@ -25,7 +25,7 @@ def plotvars(x,y = 0, sv = False, filename = 'qd_plot.png', ax1 = 'x', ax2 = 'f(
     """
     quick and dirty x and x-y plotting
     """
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(1,1,1)
     if y:
         ax.plot(x,y, color = 'k')
         ax.set_xlabel(ax1)
