@@ -74,7 +74,7 @@ contact: kln@cas.au.dk
 | 11:30-12:00 | [Network Analysis: Tools - Gephi](https://docs.google.com/presentation/d/1Dfx7MQqHG3jgqVWYq4wdxvjwRr8WAw0TpDKBVWRC8fc/edit?usp=sharing) | PL |
 | 12:00-13:00 | Lunch | * |
 | 13:00-13:30 | [Topic Modeling](https://docs.google.com/document/d/1UDmla6GiaKCPF10eVlfGMf_9LUn0yV4XxdoAgKk3DG0/edit?usp=sharing) | PL |
-| 13:30-14:00 | [Topics Modeling: Hands-On]((https://docs.google.com/document/d/1UDmla6GiaKCPF10eVlfGMf_9LUn0yV4XxdoAgKk3DG0/edit?usp=sharing) | PL |
+| 13:30-14:00 | [Topics Modeling Hands-On](https://docs.google.com/document/d/1UDmla6GiaKCPF10eVlfGMf_9LUn0yV4XxdoAgKk3DG0/edit?usp=sharing) | PL |
 | 14:00-14:30 | Project hour | PL |
 | 14:30-15:00 | Project hour | PL |
 
