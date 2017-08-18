@@ -55,6 +55,34 @@ names(clustering$cluster[clustering$cluster==n][1:10])
 })
 ```
 
-### Entire model reduced to two dimensions using t-SNE:
+## Reducing space to a plane
+
+Set up a tension or dichotomy 
+
+`tyskland_danmark = model[[c("tyskland","danmark"),average=F]]`
+
+Take just the most common 3,000 words
+
+`tyskland_danmark_words = model[1:3000,] %>% cosineSimilarity(tyskland_danmark)`
+
+Get the most "German" and most "Danish" words:
+
+```
+tyskland_danmark_words = tyskland_danmark_words[
+  rank(-tyskland_danmark_words[,1])<20 |
+  rank(-tyskland_danmark_words[,2])<20,
+  ]
+```
+Plot the result:
+
+```
+plot(tyskland_danmark_words,type='n')
+text(tyskland_danmark_words,labels=rownames(tyskland_danmark_words))
+```
+
+plot(sweet_and_saltiness,type='n')
+text(sweet_and_saltiness,labels=rownames(sweet_and_saltiness))
+
+## Entire model reduced to two dimensions using t-SNE:
 
 `plot(model,perplexity=50)`
