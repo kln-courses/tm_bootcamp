@@ -36,7 +36,7 @@ This takes all three text files in the levned directry and combines them into a 
 
 ### Similar terms to two or more words
 
-`model %>% closest_to(model[[c("oversættelse","oversættelsen")]])`
+`model %>% closest_to(model[[c("tyskland","berlin")]])`
 
 ## kMeans Clustering (Poor Man's Topic Model)
 
