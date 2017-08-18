@@ -34,7 +34,7 @@ The first step is to Import all your text files. The result will be a combined b
 
 If you’re on a PC, use:
 
-`bin/\mallet import-dir --input sections/ --output levned.mallet --keep-sequence --stoplist-file stoplist-da.txt`
+`bin\mallet import-dir --input sections/ --output levned.mallet --keep-sequence --stoplist-file stoplist-da.txt`
 
 ## Training Topic Models
 
