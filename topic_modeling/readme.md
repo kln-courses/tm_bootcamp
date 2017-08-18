@@ -34,11 +34,11 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 
 The first step is to Import all your text files. The result will be a combined binary file that isn’t much use to you, but that is optimized for further work in Mallet.
 
-`bin/mallet import-dir --input sections/ --output levned.mallet  --token-regex '\p{L}[\p{L}\p{P}]*\p{L}' --keep-sequence  --stoplist-file stoplist-da.txt`
+`bin/mallet import-dir --input sections/ --output levned.mallet  --token-regex '\p{L}[\p{L}\p{P}]*\p{L}' --keep-sequence  --stoplist-file stoplist-levend.txt`
 
 If you’re on a PC, use:
 
-`bin\mallet import-dir --input sections/ --output levned.mallet --keep-sequence --stoplist-file stoplist-da.txt`
+`bin\mallet import-dir --input sections/ --output levned.mallet --keep-sequence --stoplist-file stoplist-levend.txt`
 
 ## Training Topic Models
 
