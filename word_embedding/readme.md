@@ -32,6 +32,10 @@ This takes all three text files in the levned directry and combines them into a 
 
 `model %>% closest_to("oversættelse")`
 
+#### Want more similar words?
+
+model %>% closest_to("kultur",40)
+
 ### Entire model reduced to two dimensions using t-SNE:
 
 `plot(model,perplexity=50)`
