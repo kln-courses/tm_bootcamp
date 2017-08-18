@@ -22,6 +22,10 @@ There are a number of variants of csplit. They all seem to behave differently, a
 `'/<head/'` is the actual regular expression (within single quotes) that looks for a pattern specific to Levned. 
 
 
+## Installing Java on the Mac
+
+https://java.com/en/download/help/mac_install.xml
+
 ## Installing MALLET
 
 [http://mallet.cs.umass.edu]
