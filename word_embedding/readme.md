@@ -34,7 +34,11 @@ This takes all three text files in the levned directry and combines them into a 
 
 #### Want more similar words?
 
-model %>% closest_to("kultur",40)
+`model %>% closest_to("kultur",40)`
+
+#### Want to see similar words to a cluster of two or more words?
+
+`model %>% closest_to(model[[c("oversættelse","oversættelsen")]])`
 
 ### Entire model reduced to two dimensions using t-SNE:
 
