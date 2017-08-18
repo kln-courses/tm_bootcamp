@@ -30,7 +30,8 @@ flere
 fleste
 for
 fordi
-forrige	fra
+forrige
+fra
 faa
 før
 god
@@ -62,7 +63,8 @@ kommer
 lav
 lidt
 lille
-man	mand
+man
+mand
 mange
 med
 meget
@@ -105,7 +107,6 @@ sig
 om
 ved
 min
-fra
 emph
 er
 blev
@@ -114,7 +115,6 @@ pb
 bibl
 kunde
 ham
-man
 head
 div
 sin
@@ -142,7 +142,6 @@ skulde
 sub
 være
 dag
-mand
 maatte
 tid
 sit
