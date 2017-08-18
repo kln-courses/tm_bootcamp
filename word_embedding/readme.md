@@ -24,6 +24,14 @@ This takes all three text files in the levned directry and combines them into a 
 
 ## Testing to see if it works
 
+### Individual words - similar words
+
 `model %>% closest_to("paris")`
+
 `model %>% closest_to("berlin")`
+
 `model %>% closest_to("oversættelse")`
+
+### Entire model reduced to two dimensions using t-SNE:
+
+`plot(model,perplexity=50)`
