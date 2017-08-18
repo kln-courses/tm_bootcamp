@@ -131,7 +131,6 @@ aar
 vi
 hende
 gik
-l
 endnu
 mine
 kun
@@ -143,7 +142,6 @@ sub
 være
 dag
 maatte
-tid
 sit
 alt
 aldrig
@@ -155,9 +153,7 @@ ganske
 anden
 været
 sagde
-ung
 hele
-følte
 disse
 gjorde
 sine
@@ -166,4 +162,4 @@ saaledes
 gang
 tog
 vel
-stod
+
