@@ -21,3 +21,9 @@ This takes all three text files in the levned directry and combines them into a 
 ## Train a Word Embedding model
 
 `model = train_word2vec("levned.txt","levned_vectors.bin",vectors=200,threads=4,window=12,iter=5,negative_samples=0)`
+
+## Testing to see if it works
+
+`model %>% closest_to("paris")`
+`model %>% closest_to("berlin")`
+`model %>% closest_to("oversættelse")`
