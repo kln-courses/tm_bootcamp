@@ -24,7 +24,7 @@ There are a number of variants of csplit. They all seem to behave differently, a
 
 ## Installing Java on the Mac
 
-https://www.java.com/en/download/mac_download.jsp
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
 ## Installing MALLET
 
