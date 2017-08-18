@@ -44,13 +44,13 @@ Imporant to understand that this is somewhat limited.  In Ben Schmidt's words,
 
 >You can think of this as a sort of topic model, although unlike more sophisticated topic modeling algorithms like Latent Direchlet Allocation, each word must be tied to single particular topic.
 
-To change the number of clusters, or `k`, change the number in `centers,10` to something else
+To change the number of clusters, or `k`, change the number in `centers,20` to something else
 
 ```
 set.seed(10)
 centers = 150
 clustering = kmeans(model,centers=centers,iter.max = 40)
-sapply(sample(1:centers,10),function(n) {
+sapply(sample(1:centers,20),function(n) {
 names(clustering$cluster[clustering$cluster==n][1:10])
 })
 ```
