@@ -18,7 +18,7 @@ There are a number of variants of csplit. They all seem to behave differently, a
 `-k` keep all the output, even if it ends in an error.
 `-f` preFix each resulting file with the directory name sections and the filename brandes_lv1_1905
 `-b` Suffix the extension .txt onto the files. The other values are to inherit the right filename.
-`-n 4` we expect no more than 9,999 resulting file in any one directory.  Change to -n 2 if, for example, you know the text will be cut up into under 100 chunks.
+`-n 4` we expect no more than 9,999 resulting file in any one directory.  Change to `-n 2` if, for example, you know the text will be cut up into under 100 chunks.
 `'/<head/'` is the actual regular expression (within single quotes) that looks for a pattern specific to Levned. 
 
 
@@ -28,5 +28,11 @@ There are a number of variants of csplit. They all seem to behave differently, a
 
 ## Importing data into MALLET
 
+The first step is to Import all your text files. The result will be a combined binary file that isn’t much use to you, but that is optimized for further work in Mallet.
 
+`bin/mallet import-dir --input sections/ --output levned.mallet  --token-regex '\p{L}[\p{L}\p{P}]*\p{L}' --keep-sequence  --stoplist-file stoplist-da.txt`
+
+If you’re on a PC, use:
+
+`bin/\mallet import-dir --input sections/ --output levned.mallet --keep-sequence --stoplist-file stoplist-da.txt`
 
