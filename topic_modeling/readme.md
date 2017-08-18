@@ -36,3 +36,19 @@ If you’re on a PC, use:
 
 `bin/\mallet import-dir --input sections/ --output levned.mallet --keep-sequence --stoplist-file stoplist-da.txt`
 
+## Training Topic Models
+
+The second step is to “Train topics” on file you created during the import process. The result will be a list of unlabeled topics, expressed by their significant, or characteristic, words
+
+Quick command -- used for testing different number of topics:
+
+`bin/mallet train-topics --input levned.mallet --num-topics 10 --optimize-interval 10 --random-seed 1 --num-threads 8`
+
+You can adjust the `--num-threads` argument with the number of cores in your machine.
+
+Longer command, with more output for later exploration:
+
+`bin/mallet train-topics --input levned.mallet --num-topics 30  --output-topic-keys topic30keys.txt --xml-topic-phrase-report levned-phrase-30-report.xml --output-doc-topics levned-doc-30-topics.txt --optimize-interval 10 --inferencer-filename levned-30-inferencer.mallet --random-seed 1 --num-threads 8`
+
+
+
