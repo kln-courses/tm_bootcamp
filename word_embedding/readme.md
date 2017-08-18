@@ -22,9 +22,7 @@ This takes all three text files in the levned directry and combines them into a 
 
 `model = train_word2vec("levned.txt","levned_vectors.bin",vectors=200,threads=4,window=12,iter=5,negative_samples=0)`
 
-## Testing to see if it works
-
-### Individual words - similar words
+## Word Similarity
 
 `model %>% closest_to("paris")`
 
@@ -32,13 +30,30 @@ This takes all three text files in the levned directry and combines them into a 
 
 `model %>% closest_to("oversættelse")`
 
-#### Want more similar words?
+### Getting a longer list of similar words
 
 `model %>% closest_to("kultur",40)`
 
-#### Want to see similar words to a cluster of two or more words?
+### Similar terms to two or more words
 
 `model %>% closest_to(model[[c("oversættelse","oversættelsen")]])`
+
+## kMeans Clustering (Poor Man's Topic Model)
+
+Imporant to understand that this is somewhat limited.  In Ben Schmidt's words,
+
+>You can think of this as a sort of topic model, although unlike more sophisticated topic modeling algorithms like Latent Direchlet Allocation, each word must be tied to single particular topic.
+
+To change the number of clusters, or `k`, change the number in `centers,10` to something else
+
+```
+set.seed(10)
+centers = 150
+clustering = kmeans(model,centers=centers,iter.max = 40)
+sapply(sample(1:centers,10),function(n) {
+names(clustering$cluster[clustering$cluster==n][1:10])
+})
+```
 
 ### Entire model reduced to two dimensions using t-SNE:
 
