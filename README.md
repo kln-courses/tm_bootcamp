@@ -90,7 +90,7 @@ topics: classification, document similarity, and word embedding
 | 11:00-11:30 | `Optimization` | KLN |
 | 11:30-12:00 | `Free Play` | KLN |
 | 12:00-13:00 | Lunch | * |
-| 13:00-13:30 | `Word Embedding: Overview` | PL |
+| 13:00-13:30 | [Topic Modeling: Review](https://github.com/kln-courses/tm_bootcamp/blob/master/topic_modeling/) | PL |
 | 13:30-14:00 | `Word Embedding: Demonstrations` | PL |
-| 14:00-14:30 | `Word Embedding: Hands-On` | PL |
+| 14:00-14:30 | [Word Embedding: Hands-On](https://github.com/kln-courses/tm_bootcamp/tree/master/word_embedding) | PL |
 | 14:30-15:00 | Finish | * |
